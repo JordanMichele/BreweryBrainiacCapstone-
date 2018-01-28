@@ -25,78 +25,56 @@
       }
     </style>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_CkUDyN90lQkJfvSI5-6JiZEZT3IjiK0&callback=initMap"></script>
-
     <script>
-      // In the following example, markers appear when the user clicks on the map.
-      // Each marker is labeled with a single alphabetical character.
-      var labels = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','K','Y','Z'];
-      var labelIndex = 0;
+     
+     // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
-      var infoWindow;
+      var map;
+      var infowindow;
 
-      // Lat and Long of brewery locations
-      function initialize() {
-        var Rochester = { lat: 43.1563, lng: -77.5976 };
-        var ThreeHeads = { lat: 43.1562, lng: -77.5797 };
-        var RohrbachBrewing = { lat: 43.1633, lng: - 77.5870 };
-        var LostBoroughBrewing = { lat: 43.1563, lng: - 77.5690 };
-        var FairportBrewing = { lat: 43.0988, lng: - 77.4417 };
-        var Lock32 = { lat: 43.0919, lng: - 77.5129 };
-        var Triphammer = { lat: 43.1047, lng: - 77.4437 };
-        var CB = { lat: 42.9520, lng: - 77.6035 };
-    
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-          center: Rochester
+      function initMap() {
+        var Rochester = {lat: 43.1563, lng: -77.5976};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: Rochester,
+          zoom: 13
         });
 
-        // This event listener calls addMarker() when the map is clicked.
-        //google.maps.event.addListener(map, 'click', function(event) {
-         // addMarker(event.latLng, map);
-        //});
-
-        // Add a marker at the locations of the breweries.
-        addMarker(Rochester, map);
-        addMarker(ThreeHeads, map);
-        addMarker(RohrbachBrewing, map);
-        addMarker(LostBoroughBrewing, map);
-        addMarker(FairportBrewing, map);
-        addMarker(Lock32, map);
-        addMarker(Triphammer, map);
-        addMarker(CB, map);
-
-        infoWindow = new google.maps.InfoWindow();
+        infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+        service.textSearch({
+          location: Rochester,
+          radius: 5000,
+          query: 'craft breweries in Rochester NY'
+        }, callback);
       }
 
-     // Adds a marker to the map.
-      function addMarker(location, map) {
-        // Add the marker at the clicked location, and add the next-available label
-        // from the array of alphabetical characters.
-        var marker = new google.maps.Marker({
-          position: location,
-          label: labels[labelIndex++ % labels.length],
-          animation: google.maps.Animation.DROP,
-          map: map
-        });
-        google.maps.event.addListener(marker, 'click', function() {
-
-          infoWindow.setContent(location.name);
-          infoWindow.open(map, this);
-
-        });
-      }
-
-          function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
+      function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            createMarker(results[i]);
+          }
         }
       }
 
+      function createMarker(place) {
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
 
-      google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name + ' // Rating: ' + place.rating + ' out of 5 ' + ' // Address: ' + place.formatted_address);
+          infowindow.open(map, this);
+        });
+      }
+
+
+
+     
     </script>
   
 
@@ -133,17 +111,19 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Local Breweries
+          My Top 10 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="http://rocbrewingco.com/" target="_blank">Roc Brewing</a>
-          <a class="dropdown-item" href="https://threeheadsbrewing.com/" target="_blank">Three Heads Brewing</a>
-          <a class="dropdown-item" href="http://rohrbachs.com/" target="_blank">Rohrbach Brewing</a>
-          <a class="dropdown-item" href="http://www.lostboroughbrewing.com/" target="_blank">Lost Borough Brewing</a>
-          <a class="dropdown-item" href="http://www.fairportbrewing.com/" target="_blank">Fairport Brewing</a>
-          <a class="dropdown-item" href="http://lock32brew.com/" target="_blank">Lock 32 Brewing</a>
-          <a class="dropdown-item" href="http://www.triphammerbierwerks.com/" target="_blank">Triphammer Bierwerks</a>
-          <a class="dropdown-item" href="http://www.cbcraftbrewers.com/" target="_blank">CB Craft Brewers</a>
+          <a class="dropdown-item" href="http://rocbrewingco.com/" target="_blank">1.) Roc Brewing</a>
+          <a class="dropdown-item" href="https://threeheadsbrewing.com/" target="_blank">2.) Three Heads Brewing</a>
+          <a class="dropdown-item" href="http://rohrbachs.com/" target="_blank">3.) Rohrbach Brewing</a>
+          <a class="dropdown-item" href="http://www.lostboroughbrewing.com/" target="_blank">4.) Lost Borough Brewing</a>
+          <a class="dropdown-item" href="http://www.fairportbrewing.com/" target="_blank">5.) Fairport Brewing</a>
+          <a class="dropdown-item" href="http://lock32brew.com/" target="_blank">6.) Lock 32 Brewing</a>
+          <a class="dropdown-item" href="http://www.triphammerbierwerks.com/" target="_blank">7.) Triphammer Bierwerks</a>
+          <a class="dropdown-item" href="http://www.cbcraftbrewers.com/" target="_blank">8.) CB Craft Brewers</a>
+          <a class="dropdown-item" href="https://www.k2brewing.com/" target="_blank">9.) K2 Brothers Brewing</a>
+          <a class="dropdown-item" href="http://www.irontugbrewing.com/" target="_blank">10.) Iron Tug Brewing</a>
         </div>
       </li>
 
@@ -152,9 +132,8 @@
 </nav>
 
 
-
-
 <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_CkUDyN90lQkJfvSI5-6JiZEZT3IjiK0&libraries=places&callback=initMap" async defer></script>
 
 
 
