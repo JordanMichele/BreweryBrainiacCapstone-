@@ -1,3 +1,125 @@
-body{
-	background-color: #03A678;
+* {
+	font-family: 'Amaranth', sans-serif;
 }
+
+
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        /*background: url(images/beer-machine-alcohol-brewery-159291.jpg) cover no-repeat center center;*/
+  }
+
+.social{
+	list-style-type: none;
+	float: left;
+	color: black; 
+}
+
+#facebook{
+	margin-left: 3px;
+}
+
+#welcome{
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	text-align: left;
+	font-family: 'Amaranth', sans-serif;
+	color: white;
+}
+
+
+#intro {
+	color: green;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    color: white;
+    text-align: center;
+  }
+
+ #box {
+  background: #f7f7f7;
+  transition-property: background;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+}
+
+#box:hover {
+  background: lightgreen;
+}
+
+
+  #map {
+        margin-top: 100px;
+        margin-bottom: 200px;
+        margin-left: 200px;
+        height: 55%;
+        width: 75%;
+        border: 10px solid grey;
+        border-radius: 1%;
+  }
+
+	#logo {
+	transition: all .2s ease-out;
+	}
+
+	#logo:hover {
+	transform: rotate(180deg);
+	}
+
+.welcome {
+	display: inline-block;
+}
+
+#button {
+	text-decoration: none;
+	font-family: sans-serif;
+	background-color: #F08080;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	padding: 15px 30px;
+	border-radius: 60px;
+	border:1px solid #1d3c6a;
+	margin: 40px 40px 40px 225px;
+}
+
+#button:hover {
+	background-color: lightblue;
+}
+
+#splashHeader {
+	display: inline-block;
+	margin-left: 200px;
+}
+
+#splashJumbo {
+	background-color: #74b580;
+}
+
+#enterBtn {
+    color: #fff;
+    background-color: #4e4f52;
+    border-color: #4e4f52;
+}
+
+#enterBtn:hover {
+	background: #fff;
+	border-color: #fff;
+	color: black;
+}
+
+	
+
+
+
+
+
