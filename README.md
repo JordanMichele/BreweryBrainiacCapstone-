@@ -16,3 +16,10 @@ Below is a screenshot of the dropdown tab in the navbar where it shows my Top 10
 
 Below is a screenshot of embedded Facebook events from the breweries 
 <img width="1291" alt="screen shot 2018-02-06 at 9 22 03 am" src="https://user-images.githubusercontent.com/33236453/35865687-296eb6b2-0b23-11e8-9e0c-c573321f5b74.png">
+
+Summary:
+This project uses the Google Maps API to let users see craft breweries in the area of Rochester NY.
+Once a user clicks on the specific brewery marker they then see specific details about that micro brewery.
+This app is intended to be a one-stop-shop for craft beer lovers and enthusiast in the Rochester NY area.
+Giving users information on new beer alerts, events, new breweries, ect.
+This app utilized HTML5, CSS3, Javascript, Bootstrap, Google Maps API and jQuery. 
