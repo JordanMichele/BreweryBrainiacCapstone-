@@ -18,7 +18,7 @@
         service.textSearch({
           location: Rochester,
           radius: 5000,
-          query: 'craft breweries in Rochester NY'
+          query: 'craft brewery Rochester NY'
         }, callback);
       }
 
