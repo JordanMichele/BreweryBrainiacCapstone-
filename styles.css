@@ -12,7 +12,7 @@ html, body {
 
 .social{
 	list-style-type: none;
-	float: left;
+	float: center;
 	color: black; 
 }
 
@@ -60,9 +60,11 @@ html, body {
   #map {
         margin-top: 100px;
         margin-bottom: 200px;
-        margin-left: 200px;
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
         height: 55%;
-        width: 75%;
+        width: 55%;
         border: 10px solid grey;
         border-radius: 1%;
   }
@@ -114,6 +116,14 @@ html, body {
 #enterBtn:hover {
 	background: #fff;
 	border-color: #fff;
+	color: black;
+}
+
+#splashWelcome {
+	color: #fff;
+}
+
+#splashWelcome:hover {
 	color: black;
 }
 
