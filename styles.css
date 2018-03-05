@@ -17,8 +17,17 @@ html, body {
 }
 
 #facebook{
-	margin-left: 3px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	color: black;
+	width: 25px;
+    height: 25px;
 }
+
+#facebook:hover {
+	transform: rotate(30deg);
+	}
 
 #welcome{
 	margin-top: 15px;
