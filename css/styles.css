@@ -1,0 +1,181 @@
+
+*{
+	font-family: 'Amaranth', sans-serif;
+}
+
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        /*background: url(images/beer-machine-alcohol-brewery-159291.jpg) cover no-repeat center center;*/
+  }
+
+.social{
+	list-style-type: none;
+	float: center;
+	color: black; 
+}
+
+#facebook{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	color: black;
+	width: 24px;
+    height: 24px;
+}
+
+#facebook:hover {
+	transform: rotate(30deg);
+	}
+
+#welcome{
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-family: 'Amaranth', sans-serif;
+	color: white;
+}
+
+
+#intro {
+	color: green;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    color: white;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+  }
+
+ #box {
+  background: #f7f7f7;
+  transition-property: background;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+}
+
+#box:hover {
+  background: lightgreen;
+}
+
+
+  #map {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        height: 55%;
+        width: 55%;
+        border: 10px solid grey;
+        border-radius: 1%;
+  }
+
+	#logo {
+	transition: all .2s ease-out;
+	}
+
+	#logo:hover {
+	transform: rotate(180deg);
+	}
+
+.welcome {
+	display: inline-block;
+}
+
+#button {
+	text-decoration: none;
+	font-family: 'Amaranth', sans-serif;
+	background-color: #F08080;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	padding: 15px 30px;
+	border-radius: 60px;
+	border:1px solid #1d3c6a;
+	margin: 40px 40px 40px 225px;
+}
+
+#button:hover {
+	background-color: lightblue;
+}
+
+#splashHeader {
+	display: inline-block;
+	margin-left: 200px;
+}
+
+#splashJumbo {
+	background-color: #74b580;
+}
+
+#enterBtn {
+    color: #fff;
+    background-color: #4e4f52;
+    border-color: #4e4f52;
+}
+
+#enterBtn:hover {
+	background: #fff;
+	border-color: #fff;
+	color: black;
+}
+
+#splashWelcome {
+	color: #fff;
+}
+
+#splashWelcome:hover {
+	color: black;
+}
+
+#weather {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+.current-weather {
+	display: block;
+	/*background: url(images/white-brick-wallpaper.jpg); background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.6);*/
+	background-color: tan;
+	font-family: 'Amaranth', sans-serif;
+}
+
+#brewery{
+	text-align: center;
+	color: black;
+	font-family: 'Amaranth', sans-serif;
+}
+
+ #temp, #city, #main{
+	color: black;
+	font-family: 'Amaranth', sans-serif;
+
+}
+
+#suggestedBrewery{
+	margin-top: 20px
+}
+
+
+
+
+
+
+	
+
+
+
+
+
