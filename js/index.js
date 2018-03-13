@@ -51,7 +51,7 @@
 // Weather API Request 
     $( document ).ready(function() {
 
-      var api = 'http://api.openweathermap.org/data/2.5/weather?zip=14609,us&appid=0ef99b497547688a2ef307fb58ccfbb6';
+      var api = 'https://api.openweathermap.org/data/2.5/weather?zip=14609,us&appid=0ef99b497547688a2ef307fb58ccfbb6';
       
 
 
@@ -81,7 +81,7 @@
           
           } else if(fTemp > 40+'°F'){
             $("#brewery").html(swiftWater);
-            
+
           } else if (fTemp > 0+'°F'){
             $("#brewery").html(Rohrbach);
           }
