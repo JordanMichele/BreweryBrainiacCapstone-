@@ -3,11 +3,16 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="index.js"></script>
+    <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
     <title>Brewery Brainiac</title>
   </head>
 
@@ -36,7 +41,11 @@
         <ul class="navbar-nav mr-auto">
 
           <li class="nav-item">
-            <a class="nav-link" href="Events.html">Latest Brewery News</a>
+            <a class="nav-link" href="Events.html">Local Brewery News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="photo.html">Gallery</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -70,14 +79,37 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_CkUDyN90lQkJfvSI5-6JiZEZT3IjiK0&libraries=places&callback=initMap" async defer>
     </script>
 
+
+<div id="fb-post" class="text-center current-weather">
+
+  <div class="row">
+    <div class="col-sm">
+      <h1 id="welcome">Current Weather</h1>
+      <ul id="weather" class="list-unstyled">
+          <button id="temp" type="button" class="btn btn-secondary btn-lg active"></button>
+          <button id="city" type="button" class="btn btn-secondary btn-lg active"></button>
+          <button id="main" type="button" class="btn btn-secondary btn-lg active"></button><br>
+          <h3 id="welcome">Suggested Brewery for Weather </h3><br>
+          <button id="brewery" type="button" class="btn btn-secondary btn-lg active"></button>
+
+      </ul>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
 <!-- Footer with the social buttons -->
 <div class="footer" id="box">
   <ul class="social">
-      <li><span><a href="https://www.instagram.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-instagram" id="facebook"></i></a></span><span><a href="https://twitter.com/BreweryBrainiac?lang=en" target="_blank"><i class="fab fa-twitter" id="facebook"></i></a></span><span><a href="https://www.facebook.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-facebook" id="facebook" id="facebook"></i></a></span> LETS'S GET SOCIAL</li>
+      <li><span><a href="https://www.instagram.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-instagram" id="facebook"></i></a></span><span><a href="https://twitter.com/BreweryBrainiac?lang=en" target="_blank"><i class="fab fa-twitter" id="facebook"></i></a></span><span><a href="https://www.facebook.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-facebook" id="facebook" id="facebook"></i></a></span> Lets's Get Social!!!</li>
   </ul>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
