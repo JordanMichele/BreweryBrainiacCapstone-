@@ -114,13 +114,18 @@ html, body {
 }
 
 #splashJumbo {
-	background-color: #74b580;
+	background-color: tan;
+}
+
+#bullet {
+	text-align: center;
 }
 
 #enterBtn {
     color: #fff;
     background-color: #4e4f52;
     border-color: #4e4f52;
+
 }
 
 #enterBtn:hover {
@@ -131,10 +136,7 @@ html, body {
 
 #splashWelcome {
 	color: #fff;
-}
-
-#splashWelcome:hover {
-	color: black;
+	text-align: center;
 }
 
 #weather {
