@@ -1,5 +1,5 @@
 
-*{
+* {
 	font-family: 'Amaranth', sans-serif;
 }
 
@@ -9,6 +9,12 @@ html, body {
         padding: 0;
         /*background: url(images/beer-machine-alcohol-brewery-159291.jpg) cover no-repeat center center;*/
   }
+
+.jumbotron {
+        background: url(../images/breweries2.jpg) center center;
+        background-repeat: no-repeat;
+  		background-size: cover;
+       }
 
 .social{
 	list-style-type: none;
@@ -135,8 +141,9 @@ html, body {
 }
 
 #splashWelcome {
-	color: #fff;
+	color: #000;
 	text-align: center;
+	font-family: 'Amaranth', sans-serif;
 }
 
 #weather {
