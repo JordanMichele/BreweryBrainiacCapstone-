@@ -20,12 +20,12 @@
 <!-- loads the background image behind the map -->
     <style type="text/css">
       body {
-        background: url(images/knocker-circle-usd-wood-161922.jpeg);
+        background: url(images/breweries2.jpg);
       }
     </style>
 
 <!-- Nav Bar using Bootstrap -->
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="box">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="headerFooter">
 
         <a class="navbar-brand" href="#" id="logo">
           <img src="images/breweryb33.png" width="75" height="75" class="d-inline-block align-top"  href="index.html">
@@ -68,7 +68,7 @@
     </nav>
 
     <div class="welcome">
-      <h1 id="welcome"> Rochester Brewery Locator </h1>
+      <h1 id="welcome"> <strong>Rochester Brewery Locator</strong></h1>
     </div>
 
 <!-- Appends the Google Map to the page -->
@@ -84,16 +84,18 @@
 
   <div class="row">
     <div class="col-sm">
-      <h1 id="welcome">Current Weather</h1>
-      <ul id="weather" class="list-unstyled">
+      <h1 id="welcome"><strong>Current Weather</strong></h1>
+      <ul id="weather" class="list-unstyled col-sm">
           <button id="temp" type="button" class="btn btn-secondary btn-lg active"></button>
           <button id="city" type="button" class="btn btn-secondary btn-lg active"></button>
           <button id="main" type="button" class="btn btn-secondary btn-lg active"></button><br>
-          <h3 id="welcome">Suggested Brewery for Weather </h3><br>
-          <button id="brewery" type="button" class="btn btn-secondary btn-lg active"></button>
-
-      </ul>
-      
+      </ul> 
+          <h4 id="welcome" style="margin-top: 10px;"><strong>Suggested Brewery for Weather </strong></h4><br>
+    </div>
+    
+          <div id="loadedBrewery" class="container">
+          <h5 id="brewery"></h5>
+          </div>
     </div>
   </div>
 
@@ -103,7 +105,7 @@
 
 
 <!-- Footer with the social buttons -->
-<div class="footer" id="box">
+<div class="footer" id="headerFooter">
   <ul class="social">
       <li><span><a href="https://www.instagram.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-instagram" id="facebook"></i></a></span><span><a href="https://twitter.com/BreweryBrainiac?lang=en" target="_blank"><i class="fab fa-twitter" id="facebook"></i></a></span><span><a href="https://www.facebook.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-facebook" id="facebook" id="facebook"></i></a></span> Lets's Get Social!!!</li>
   </ul>

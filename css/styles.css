@@ -41,7 +41,18 @@ html, body {
 	margin-bottom: 15px;
 	text-align: center;
 	font-family: 'Amaranth', sans-serif;
+	color: black;
+	text-decoration: underline;
+}
+
+#heading{
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	text-align: left;
+	font-family: 'Amaranth', sans-serif;
 	color: white;
+	text-decoration: underline;
 }
 
 
@@ -61,15 +72,15 @@ html, body {
     font-family: 'Amaranth', sans-serif;
   }
 
- #box {
+ #headerFooter {
   background: #f7f7f7;
   transition-property: background;
-  transition-duration: 3s;
+  transition-duration: 2s;
   transition-timing-function: linear;
 }
 
-#box:hover {
-  background: lightgreen;
+#headerFooter:hover {
+  background: tan;
 }
 
 
@@ -150,7 +161,7 @@ html, body {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .current-weather {
@@ -165,6 +176,14 @@ html, body {
 	text-align: center;
 	color: black;
 	font-family: 'Amaranth', sans-serif;
+}
+
+#loadedBrewery{
+	background-color: #e6e6e6; 
+	border-color: #adadad; 
+	border-radius: 10px; 
+	padding: 10px;
+	margin-bottom: 150px;
 }
 
  #temp, #city, #main{
