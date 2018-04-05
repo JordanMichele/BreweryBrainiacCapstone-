@@ -90,13 +90,13 @@ html, body {
         display: block;
     	margin-left: auto;
     	margin-right: auto;
-        height: 55%;
-        width: 55%;
+        height: 65%;
+        width: 65%;
         border: 10px solid grey;
         border-radius: 1%;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
 	#map{
 		margin-top: 100px;
         margin-bottom: 100px;
