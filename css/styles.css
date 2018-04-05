@@ -11,7 +11,7 @@ html, body {
   }
 
 .jumbotron {
-        background: url(../images/breweries2.jpg) center center;
+        background: url(../images/wood.jpg) center center;
         background-repeat: no-repeat;
   		background-size: cover;
        }
@@ -139,7 +139,7 @@ html, body {
 }
 
 #splashJumbo {
-	background-color: tan;
+	color: white;
 }
 
 #bullet {
@@ -160,7 +160,7 @@ html, body {
 }
 
 #splashWelcome {
-	color: #000;
+	color: white;
 	text-align: center;
 	font-family: 'Amaranth', sans-serif;
 }
@@ -211,15 +211,3 @@ html, body {
 #suggestedBrewery{
 	margin-top: 20px
 }
-
-
-
-
-
-
-	
-
-
-
-
-
