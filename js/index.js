@@ -1,13 +1,9 @@
- 
-
-
       var map;
       var infowindow;
-
 // loads the map having Rochester NY coordinates in the center
       function initMap() {
         var Rochester = {lat: 43.1563, lng: -77.5976};
-
+        
         map = new google.maps.Map(document.getElementById('map'), {
           center: Rochester,
           zoom: 11
@@ -21,7 +17,6 @@
           query: 'craft brewery Rochester NY'
         }, callback);
       }
-
 
       function callback(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -99,42 +94,3 @@
           
       });
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

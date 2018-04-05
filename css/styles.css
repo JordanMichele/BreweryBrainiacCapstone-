@@ -96,13 +96,21 @@ html, body {
         border-radius: 1%;
   }
 
-	#logo {
-	transition: all .2s ease-out;
-	}
+  @media (max-width: 500px) {
+	#map{
+		margin-top: 100px;
+        margin-bottom: 100px;
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        height: 50%;
+        width: 95%;
+        border: 10px solid grey;
+        border-radius: 1%;
 
-	#logo:hover {
-	transform: rotate(180deg);
 	}
+}
+
 
 .welcome {
 	display: inline-block;
@@ -166,10 +174,9 @@ html, body {
 
 .current-weather {
 	display: block;
-	/*background: url(images/white-brick-wallpaper.jpg); background-color: rgba(0,0,0,0.3);
-	background-color: rgba(0,0,0,0.6);*/
 	background-color: tan;
 	font-family: 'Amaranth', sans-serif;
+	padding: 20px;
 }
 
 #brewery{
@@ -182,8 +189,17 @@ html, body {
 	background-color: #e6e6e6; 
 	border-color: #adadad; 
 	border-radius: 10px; 
-	padding: 10px;
+	padding: 20px;
 	margin-bottom: 150px;
+}
+
+@media (max-width: 500px) {
+	#loadedBrewery{
+	background-color: #e6e6e6; 
+	border-color: #adadad; 
+	border-radius: 10px; 
+	margin: 50px;
+	}
 }
 
  #temp, #city, #main{
