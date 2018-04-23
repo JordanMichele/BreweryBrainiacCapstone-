@@ -1,16 +1,15 @@
-      var map;
-      var infowindow;
+      let map;
+      let infowindow;
 // loads the map having Rochester NY coordinates in the center
       function initMap() {
-        var Rochester = {lat: 43.1563, lng: -77.5976};
-
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: Rochester,
-          zoom: 11
+        let Rochester = {lat: 43.1563, lng: -77.5976};
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: Rochester,
+            zoom: 11
         });
 // queries the craft breweries in Rochester
         infowindow = new google.maps.InfoWindow();
-        var service = new google.maps.places.PlacesService(map);
+        let service = new google.maps.places.PlacesService(map);
         service.textSearch({
           location: Rochester,
           radius: 5000,
@@ -20,15 +19,15 @@
 
       function callback(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
-          for (var i = 0; i < results.length; i++) {
+          for (let i = 0; i < results.length; i++) {
             createMarker(results[i]);
           }
         }
       }
 
       function createMarker(place) {
-        var placeLoc = place.geometry.location;
-        var marker = new google.maps.Marker({
+        let placeLoc = place.geometry.location;
+        let marker = new google.maps.Marker({
           map: map,
           position: place.geometry.location
         });
@@ -40,16 +39,11 @@
           infowindow.open(map, this);
         });
       }
-
-
-
 // Weather API Request 
     $( document ).ready(function() {
 
-      var api = 'https://api.openweathermap.org/data/2.5/weather?zip=14609,us&appid=0ef99b497547688a2ef307fb58ccfbb6';
+      const api = 'https://api.openweathermap.org/data/2.5/weather?zip=14609,us&appid=0ef99b497547688a2ef307fb58ccfbb6';
       
-
-
       $.getJSON(api, function(data){
         //JSON call for open weather API 
           let fTemp;
@@ -90,7 +84,6 @@
 
           } else if (fTemp > 0+'°F'){
             $("#brewery").html(Rohrbach);
-          }
-          
+          }   
       });
     });
