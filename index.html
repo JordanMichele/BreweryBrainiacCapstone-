@@ -3,35 +3,22 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script
-          src="https://code.jquery.com/jquery-3.3.1.js"
-          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-          crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Brewery Brainiac</title>
   </head>
 
-  <body>
-<!-- loads the background image behind the map -->
-    <style type="text/css">
-      body {
-        background: url(images/breweries2.jpg);
-      }
-    </style>
-
+  <body class="indexMain">
 <!-- Nav Bar using Bootstrap -->
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="headerFooter">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="headerFooter" role="Navigation">
 
-        <a class="navbar-brand" href="#" id="logo">
-          <img src="images/breweryb33.png" width="75" height="75" class="d-inline-block align-top"  href="index.html">
+        <a class="navbar-brand" href="index.html" role="Img">
+          <img src="images/breweryb33.png" class="d-inline-block align-top"  href="index.html">
         </a>
 
-        <a class="navbar-brand" href="index.html">The Brewery Brainiac</a>
+        <a class="navbar-brand" href="index.html" role="banner">The Brewery Brainiac</a>
 
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -41,81 +28,78 @@
         <ul class="navbar-nav mr-auto">
 
           <li class="nav-item">
-            <a class="nav-link" href="Events.html">Local Brewery News</a>
+            <a class="nav-link" href="events.html" role="Tab">Local Brewery News</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="photo.html">Gallery</a>
+            <a class="nav-link" href="photo.html" role="Tab">Gallery</a>
           </li>
-
+<!-- Dropdown Menu -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Now on Tap from Rochesters BEST </a>
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="Tab">Now on Tap from Rochesters BEST </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="http://rocbrewingco.com/craft-beer-menu/" target="_blank">1.) Roc Brewing</a>
-                <a class="dropdown-item" href="https://threeheadsbrewing.com/beers/" target="_blank">2.) Three Heads Brewing</a>
-                <a class="dropdown-item" href="http://rohrbachs.com/beer-hall/" target="_blank">3.) Rohrbach Brewing</a>
-                <a class="dropdown-item" href="http://www.lostboroughbrewing.com/index.html#nowontap" target="_blank">4.) Lost Borough Brewing</a>
-                <a class="dropdown-item" href="http://www.fairportbrewing.com/the-tap-room/#tap-room_on-tap" target="_blank">5.) Fairport Brewing</a>
-                <a class="dropdown-item" href="http://lock32brew.com/our-beers/" target="_blank">6.) Lock 32 Brewing</a>
-                <a class="dropdown-item" href="http://www.triphammerbierwerks.com/ontap/" target="_blank">7.) Triphammer Bierwerks</a>
-                <a class="dropdown-item" href="http://www.cbcraftbrewers.com/currentlyontap" target="_blank">8.) CB Craft Brewers</a>
-                <a class="dropdown-item" href="https://www.k2brewing.com/" target="_blank">9.) K2 Brothers Brewing</a>
-                <a class="dropdown-item" href="http://swiftwaterbrewing.com/beers/" target="_blank">10.) Swiftwater Brewing</a>
+                <a class="dropdown-item" href="http://rocbrewingco.com/craft-beer-menu/" target="_blank" role="Link">1.) Roc Brewing</a>
+                <a class="dropdown-item" href="https://threeheadsbrewing.com/beers/" target="_blank" role="Link">2.) Three Heads Brewing</a>
+                <a class="dropdown-item" href="http://rohrbachs.com/beer-hall/" target="_blank" role="Link">3.) Rohrbach Brewing</a>
+                <a class="dropdown-item" href="http://www.lostboroughbrewing.com/index.html#nowontap" target="_blank" role="Link">4.) Lost Borough Brewing</a>
+                <a class="dropdown-item" href="http://www.fairportbrewing.com/the-tap-room/#tap-room_on-tap" target="_blank" role="Link">5.) Fairport Brewing</a>
+                <a class="dropdown-item" href="http://lock32brew.com/our-beers/" target="_blank" role="Link">6.) Lock 32 Brewing</a>
+                <a class="dropdown-item" href="http://www.triphammerbierwerks.com/ontap/" target="_blank" role="Link">7.) Triphammer Bierwerks</a>
+                <a class="dropdown-item" href="http://www.cbcraftbrewers.com/currentlyontap" target="_blank" role="Link">8.) CB Craft Brewers</a>
+                <a class="dropdown-item" href="https://www.k2brewing.com/" target="_blank" role="Link">9.) K2 Brothers Brewing</a>
+                <a class="dropdown-item" href="http://swiftwaterbrewing.com/beers/" target="_blank" role="Link">10.) Swiftwater Brewing</a>
               </div>
          </li>
         </ul>
       </div>
     </nav>
-
-    <div class="welcome">
+    <!-- End of Navbar -->
+    <div class="welcome" role="Heading"> 
       <h1 id="welcome"> <strong>Rochester Brewery Locator</strong></h1>
     </div>
 
-<!-- Appends the Google Map to the page -->
-<div class="jumbotron jumbotron-fluid" class="col-sm-12 text-center" id="map">
-</div>
+<!-- Appends the Google Map API to the page -->
+<main class="jumbotron jumbotron-fluid" class="col-sm-12 text-center" id="map" aria-live="polite">
+</main>
   
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_CkUDyN90lQkJfvSI5-6JiZEZT3IjiK0&libraries=places&callback=initMap" async defer>
-    </script>
-
-
-<div id="fb-post" class="text-center current-weather">
-
+<section id="fb-post" class="text-center current-weather">
   <div class="row">
-    <div class="col-sm">
-      <h1 id="welcome"><strong>Current Weather</strong></h1>
-      <ul id="weather" class="list-unstyled col-sm">
-          <button id="temp" type="button" class="btn btn-secondary btn-lg active"></button>
-          <button id="city" type="button" class="btn btn-secondary btn-lg active"></button>
-          <button id="main" type="button" class="btn btn-secondary btn-lg active"></button><br>
-      </ul> 
-          <h4 id="welcome" style="margin-top: 10px;"><strong>Suggested Brewery for Weather </strong></h4><br>
-    </div>
-    
-          <div id="loadedBrewery" class="container">
-          <h5 id="brewery"></h5>
-          </div>
+      <div class="col-sm">
+        <h1 id="welcome"><strong>Current Weather</strong></h1>
+          <ul id="weather" class="list-unstyled col-sm" aria-live="polite">
+              <button id="temp" type="button" class="btn btn-secondary btn-lg active"></button>
+              <button id="city" type="button" class="btn btn-secondary btn-lg active"></button>
+              <button id="main" type="button" class="btn btn-secondary btn-lg active"></button><br>
+          </ul> 
+      </div>
+
+      <div id="loadedBrewery" class="container">
+        <h3 id="suggestedBrewery"><strong>Suggested Brewery for Weather </strong></h3><br>
+        <!-- Loads suggested breweries for the current weather -->
+          <h5 id="brewery" aria-live="polite"></h5>
+      </div>
     </div>
   </div>
-
-</div>
-
-
-
-
+</section>
 <!-- Footer with the social buttons -->
-<div class="footer" id="headerFooter">
+<footer class="footer" id="headerFooter">
   <ul class="social">
       <li><span><a href="https://www.instagram.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-instagram" id="facebook"></i></a></span><span><a href="https://twitter.com/BreweryBrainiac?lang=en" target="_blank"><i class="fab fa-twitter" id="facebook"></i></a></span><span><a href="https://www.facebook.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-facebook" id="facebook" id="facebook"></i></a></span> Lets's Get Social!!!</li>
   </ul>
-</div>
-
-
+</footer>
+<!-- End of Footer -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_CkUDyN90lQkJfvSI5-6JiZEZT3IjiK0&libraries=places&callback=initMap" async defer>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
     </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
     </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
 
