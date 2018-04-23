@@ -1,89 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Brewery Events</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Gallery</title>
+  </head>
 
-</head>
+<body class="eventsGalleryBody">
+<!-- Nav Bar using Bootstrap -->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="headerFooter" role="Navigation">
 
-<body>
+        <a class="navbar-brand" href="index.html" role="Img">
+          <img src="images/breweryb33.png" class="d-inline-block align-top"  href="index.html">
+        </a>
 
-	  <style type="text/css">
-      	body {
-        background: url(images/knocker-circle-usd-wood-161922.jpeg);
-      	 }
-      </style>
+        <a class="navbar-brand" href="index.html" role="banner">The Brewery Brainiac</a>
 
-	<nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="headerFooter">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-		  <a class="navbar-brand" href="index.html" id="logo">
-		    <img src="images/breweryb33.png" width="75" height="75" class="d-inline-block align-top"  href="index.html">
-		  </a>
+      <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
 
-		  <a class="navbar-brand" href="index.html">The Brewery Brainiac</a>
-
-		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-
-  <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-	      <li class="nav-item">
-	        <a class="nav-link" href="Events.html">Local Brewery News</a>
-	      </li>
-
-	      <li class="nav-item">
-            <a class="nav-link" href="photo.html">Gallery</a>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html" role="Tab">Local Brewery News</a>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="photo.html" role="Tab">Gallery</a>
+          </li>
+<!-- Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="Tab">Now on Tap from Rochesters BEST </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="http://rocbrewingco.com/craft-beer-menu/" target="_blank" role="Link">1.) Roc Brewing</a>
+                <a class="dropdown-item" href="https://threeheadsbrewing.com/beers/" target="_blank" role="Link">2.) Three Heads Brewing</a>
+                <a class="dropdown-item" href="http://rohrbachs.com/beer-hall/" target="_blank" role="Link">3.) Rohrbach Brewing</a>
+                <a class="dropdown-item" href="http://www.lostboroughbrewing.com/index.html#nowontap" target="_blank" role="Link">4.) Lost Borough Brewing</a>
+                <a class="dropdown-item" href="http://www.fairportbrewing.com/the-tap-room/#tap-room_on-tap" target="_blank" role="Link">5.) Fairport Brewing</a>
+                <a class="dropdown-item" href="http://lock32brew.com/our-beers/" target="_blank" role="Link">6.) Lock 32 Brewing</a>
+                <a class="dropdown-item" href="http://www.triphammerbierwerks.com/ontap/" target="_blank" role="Link">7.) Triphammer Bierwerks</a>
+                <a class="dropdown-item" href="http://www.cbcraftbrewers.com/currentlyontap" target="_blank" role="Link">8.) CB Craft Brewers</a>
+                <a class="dropdown-item" href="https://www.k2brewing.com/" target="_blank" role="Link">9.) K2 Brothers Brewing</a>
+                <a class="dropdown-item" href="http://swiftwaterbrewing.com/beers/" target="_blank" role="Link">10.) Swiftwater Brewing</a>
+              </div>
+         </li>
+        </ul>
+      </div>
+    </nav>
+<!-- End of Navbar -->
 
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Now on Tap from Rochesters BEST   
-	        </a>
-       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="http://rocbrewingco.com/" target="_blank">1.) Roc Brewing</a>
-	          <a class="dropdown-item" href="https://threeheadsbrewing.com/" target="_blank">2.) Three Heads Brewing</a>
-	          <a class="dropdown-item" href="http://rohrbachs.com/" target="_blank">3.) Rohrbach Brewing</a>
-	          <a class="dropdown-item" href="http://www.lostboroughbrewing.com/" target="_blank">4.) Lost Borough Brewing</a>
-	          <a class="dropdown-item" href="http://www.fairportbrewing.com/" target="_blank">5.) Fairport Brewing</a>
-	          <a class="dropdown-item" href="http://lock32brew.com/" target="_blank">6.) Lock 32 Brewing</a>
-	          <a class="dropdown-item" href="http://www.triphammerbierwerks.com/" target="_blank">7.) Triphammer Bierwerks</a>
-	          <a class="dropdown-item" href="http://www.cbcraftbrewers.com/" target="_blank">8.) CB Craft Brewers</a>
-	          <a class="dropdown-item" href="https://www.k2brewing.com/" target="_blank">9.) K2 Brothers Brewing</a>
-	          <a class="dropdown-item" href="http://www.irontugbrewing.com/" target="_blank">10.) Iron Tug Brewing</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<h1 id="heading"> Gallery </h1>
+<h1 id="heading" role="Heading"> Gallery </h1>
 
 <div id="fb-post" class="container">
 
 	<div class="row">
 		<div class="col-sm">
-			<div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'LWCpaHvCnV7clwgdoV'});Pixlee.addSimpleWidget({widgetId:'2236'});};</script><script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+			<div id="pixlee_container" aria-live="polite"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'LWCpaHvCnV7clwgdoV'});Pixlee.addSimpleWidget({widgetId:'2236'});};</script><script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
 		</div>
 	</div>
 </div>
 		
 
-<div class="footer" id="headerFooter">
+<footer class="footer" id="headerFooter">
   <ul class="social">
       <li><span><a href="https://www.instagram.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-instagram" id="facebook"></i></a></span><span><a href="https://twitter.com/BreweryBrainiac?lang=en" target="_blank"><i class="fab fa-twitter" id="facebook"></i></a></span><span><a href="https://www.facebook.com/thebrewerybrainiac/" target="_blank"><i class="fab fa-facebook" id="facebook" id="facebook"></i></a></span> Let's Get Social</li>
   </ul>
-</div>
+</footer>
 
-
-
-
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
