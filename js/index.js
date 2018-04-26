@@ -15,7 +15,8 @@
           radius: 5000,
           query: 'craft brewery Rochester NY'
         }, callback);
-      }
+      };
+      
 
       function callback(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
