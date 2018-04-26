@@ -1,7 +1,7 @@
       let map;
       let infowindow;
 // loads the map having Rochester NY coordinates in the center
-      function initMap() {
+      window.initMap = function(){
         let Rochester = {lat: 43.1563, lng: -77.5976};
           map = new google.maps.Map(document.getElementById('map'), {
             center: Rochester,
