@@ -1,163 +1,164 @@
-html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-  }
-
-.eventsGalleryBody{
-	background: url(../images/knocker-circle-usd-wood-161922.jpeg);
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.indexMain{
-	background: url(../images/breweries2.jpg);
+.eventsGalleryBody {
+  background: url(../images/knocker-circle-usd-wood-161922.jpeg);
+}
+
+.indexMain {
+  background: url(../images/breweries2.jpg);
 }
 
 .navbar-brand .d-inline-block {
-	width: 100px !important;
-	height: 100px !important;
+  width: 100px !important;
+  height: 100px !important;
 }
 
-.social{
-	list-style-type: none;
-	float: center;
-	color: black; 
+.social {
+  list-style-type: none;
+  float: center;
+  color: black;
 }
 
-#facebook{
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	color: black;
-	width: 24px;
-    height: 24px;
+#facebook {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: black;
+  width: 24px;
+  height: 24px;
 }
 
 #facebook:hover {
-	transform: rotate(30deg);
-	}
-
-#welcome{
-	margin-top: 15px;
-	margin-left: 15px;
-	text-align: center;
-	font-family: 'Amaranth', sans-serif;
-	color: black;
+  transform: rotate(30deg);
 }
 
-#suggestedBrewery{
-	font-family: 'Amaranth', sans-serif;
-	color: black;
+#welcome {
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  font-family: "Amaranth", sans-serif;
+  color: black;
 }
 
-#heading{
-	margin-top: 15px;
-	margin-left: 15px;
-	margin-bottom: 15px;
-	text-align: left;
-	font-family: 'Amaranth', sans-serif;
-	color: white;
-	text-decoration: underline;
+#suggestedBrewery {
+  font-family: "Amaranth", sans-serif;
+  color: black;
 }
 
+#heading {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: "Amaranth", sans-serif;
+  color: white;
+  text-decoration: underline;
+}
 
 #intro {
-	color: green;
+  color: green;
 }
 
-
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f7f7f7;
-    color: white;
-    text-align: center;
-    font-family: 'Amaranth', sans-serif;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7f7f7;
+  color: white;
+  text-align: center;
+  font-family: "Amaranth", sans-serif;
+}
 
- #headerFooter {
+#headerFooter {
   background: #f7f7f7;
   transition-property: background;
   transition-duration: 2s;
   transition-timing-function: linear;
-  font-family: 'Amaranth', sans-serif;
-
+  font-family: "Amaranth", sans-serif;
 }
 
 #headerFooter:hover {
   background: tan;
 }
 
-  @media (min-width: 300px) {
-	#map{
-		margin-top: 100px;
-        margin-bottom: 100px;
-        display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-        height: 50%;
-        width: 95%;
-        border: 10px solid grey;
-        border-radius: 1%;
-
-	}
+@media (min-width: 300px) {
+  #map {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 95%;
+    border: 10px solid grey;
+    border-radius: 1%;
+  }
 }
 
 @media (min-width: 600px) {
-	#map {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-        height: 65%;
-        width: 65%;
-        border: 10px solid grey;
-        border-radius: 1%;
-  	}
+  #map {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65%;
+    width: 65%;
+    border: 10px solid grey;
+    border-radius: 1%;
   }
+}
 
 .welcome {
-	display: inline-block;
+  display: inline-block;
 }
 
 #button {
-	text-decoration: none;
-	font-family: 'Amaranth', sans-serif;
-	background-color: #F08080;
-	font-size: 20px;
-	text-align: center;
-	color: #fff;
-	padding: 15px 30px;
-	border-radius: 60px;
-	border:1px solid #1d3c6a;
-	margin: 40px 40px 40px 225px;
+  text-decoration: none;
+  font-family: "Amaranth", sans-serif;
+  background-color: #f08080;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 60px;
+  border: 1px solid #1d3c6a;
+  margin: 40px 40px 40px 225px;
 }
 
 #button:hover {
-	background-color: lightblue;
+  background-color: lightblue;
 }
 
 #splashHeader {
-	display: inline-block;
-	margin-left: 200px;
+  display: inline-block;
+  margin-left: 200px;
 }
 
-#splashJumbo {
-	background: url(../images/wood.jpg) center center;
-    background-repeat: no-repeat;
-  	background-size: cover;
-	color: white;
-	font-family: 'Amaranth', sans-serif;
+#splashCopy {
+  z-index: 1;
+  color: white;
+  font-family: "Amaranth", sans-serif;
+}
+
+.jumbotron {
+  background: url(../images/wood.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #bullet {
-	text-align: center;
+  text-align: center;
 }
 
 @media (min-width: 300px) {
-   #enterBtn {
+  #enterBtn {
     color: #fff;
     background-color: #4e4f52;
     border-color: #4e4f52;
@@ -165,67 +166,67 @@ html, body {
     padding: 25px;
     font-size: 16px;
     text-align: center;
-	}
-   }
-
+  }
+}
 
 #enterBtn {
-    color: #fff;
-    background-color: #4e4f52;
-    border-color: #4e4f52;
-
+  color: #fff;
+  background-color: #4e4f52;
+  border-color: #4e4f52;
 }
 
 #enterBtn:hover {
-	background: #fff;
-	border-color: #fff;
-	color: black;
+  background: #fff;
+  border-color: #fff;
+  color: black;
 }
 
 #splashWelcome {
-	color: white;
-	text-align: center;
-	font-family: 'Amaranth', sans-serif;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  font-family: "Amaranth", sans-serif;
 }
 
 #weather {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .current-weather {
-	display: block;
-	background-color: tan;
-	font-family: 'Amaranth', sans-serif;
-	padding: 20px;
+  display: block;
+  background-color: tan;
+  font-family: "Amaranth", sans-serif;
+  padding: 20px;
 }
 
-#brewery{
-	text-align: center;
-	color: black;
-	font-family: 'Amaranth', sans-serif;
+#brewery {
+  text-align: center;
+  color: black;
+  font-family: "Amaranth", sans-serif;
 }
 
-#loadedBrewery{
-	background-color: #e6e6e6; 
-	border-color: #adadad; 
-	border-radius: 10px; 
-	padding: 20px;
+#loadedBrewery {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 @media (min-width: 200px) {
-	#loadedBrewery{
-	background-color: #e6e6e6; 
-	border-color: #adadad; 
-	border-radius: 10px; 
-	margin: 50px;
-	}
+  #loadedBrewery {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    border-radius: 10px;
+    margin: 50px;
+  }
 }
 
- #temp, #city, #main{
-	color: black;
-	font-family: 'Amaranth', sans-serif;
+#temp,
+#city,
+#main {
+  color: black;
+  font-family: "Amaranth", sans-serif;
 }
-
