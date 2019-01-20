@@ -83,7 +83,7 @@
           } else if(fTemp > 25+'°F'){
             $("#brewery").html(lock32);
 
-          } else if (fTemp > 0+'°F'){
+          } else if (fTemp > 1+'°F'){
             $("#brewery").html(Rohrbach);
           }   
       });
