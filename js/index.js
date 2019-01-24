@@ -13,7 +13,7 @@
         service.textSearch({
           location: Rochester,
           radius: 5000,
-          query: 'craft brewery Rochester NY'
+          query: 'breweries'
         }, callback);
       };
       
@@ -22,6 +22,7 @@
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           for (let i = 0; i < results.length; i++) {
             createMarker(results[i]);
+            console.log(results.length);
           }
         }
       }
@@ -54,8 +55,7 @@
           fTemp = (kelvin*(9/5)-459.67);
           //fTemp = (kelvin*(9/5)-459.67).toFixed(1)+'°F';
           let myTrunc = Math.trunc( fTemp );
-          console.log(myTrunc);
-
+          
           let Rohrbach = 'At ' + (myTrunc) + '°F' + ' pay a visit to ' + '<a href="https://www.rohrbachs.com/" target="_blank">Rohrbach Brewing Company!</a>' + ' Cozy up with a pint and a fresh homemade brick oven pizza.';
           let Genesee = 'At ' + (myTrunc) + '°F' + ' The ' + '<a href="https://www.geneseebeer.com/brewhouse/" target="_blank">Genesee Brew House</a>' + ' is a MUST. Enjoy this weather with a pint on their gorgeous rooftop';
           let threeHeads = 'At ' + (myTrunc) + '°F' + ' Visit ' + '<a href="https://threeheadsbrewing.com/" target="_blank">Three Heads Brewing.</a>' + ' Check out their Beer Garden and patio that rivals any other in the city';
