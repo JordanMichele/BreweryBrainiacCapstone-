@@ -68,22 +68,22 @@
           $("#city").html('City: ' + city + ', NY');
           $("#main").html('Conditions: ' + weatherType);
 
-          if( fTemp > 70.0+'°F' ) {
+          if( fTemp > 70.0) {
             $("#brewery").html(Genesee);
             
-          } else if(fTemp > 65.0+'°F'){
+          } else if(fTemp > 65.0){
             $("#brewery").html(RocBrewing);
 
-          } else if(fTemp > 60.0+'°F'){
+          } else if(fTemp > 60.0){
             $("#brewery").html(threeHeads);
 
-          } else if(fTemp > 50.0+'°F'){
+          } else if(fTemp > 50.0){
             $("#brewery").html(swiftWater);
           
-          } else if(fTemp > 40.0+'°F'){
+          } else if(fTemp > 40.0){
             $("#brewery").html(lostBorough);
 
-          } else if(fTemp > 25.0+'°F'){
+          } else if(fTemp > 25.0){
             $("#brewery").html(lock32);
 
           } else if (myTrunc > 1.0){
